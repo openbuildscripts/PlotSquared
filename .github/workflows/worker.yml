@@ -29,4 +29,5 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         if: steps.checkTag.outputs.exists == 'false'
         with:
+          token: ${{ secrets.PAT }}
           workflow: build.yml
