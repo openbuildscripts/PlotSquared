@@ -43,4 +43,5 @@ jobs:
           ${{ steps.latestTag.outputs.description }}
         generate_release_notes: false
         discussion_category_name: "Releases"
+        token: ${{ secrets.PAT }}
         files: PlotSquared/Bukkit/build/libs/*.jar
