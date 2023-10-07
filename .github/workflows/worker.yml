@@ -2,7 +2,7 @@ name: Check Release Tags
 
 on:
   schedule:
-    - cron: "0,30 * * * *"
+    - cron: "12,42 * * * *"
   workflow_dispatch:
 
 jobs:
