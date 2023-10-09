@@ -42,6 +42,5 @@ jobs:
           > This release is based on [v${{ steps.latestTag.outputs.release }} of IntellectualSites/PlotSquared](https://github.com/IntellectualSites/PlotSquared/releases/tag/${{ steps.latestTag.outputs.release }}).
           ${{ steps.latestTag.outputs.description }}
         generate_release_notes: false
-        discussion_category_name: "Releases"
         token: ${{ secrets.PAT }}
         files: PlotSquared/Bukkit/build/libs/*.jar
